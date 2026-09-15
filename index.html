@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>МИПАНИ</title>
+<meta name="description" content="[Получаем синтетические рецепторные элементы с использованием технологии молекулярного импринтинга]">
+<style>
+
+:root{
+  --brand:#6D28D9;          
+  --brand-soft:#F6F3FE;
+  --ink:#17131F;
+  --muted:#6E6A7B;
+  --line:#E8E5F1;
+  --bg:#FFFFFF;
+  --bg-soft:#FAF9FD;
+  --hero-grad:linear-gradient(135deg,#EDE9F7 0%,#F8F6FD 55%,#d1a7ee 100%); 
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:17px "Inter","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{margin:0;line-height:0.90;}
+h1{font-size:clamp(28px,3.6vw,44px);font-weight:800}
+h2{font-size:clamp(22px,2.5vw,30px);font-weight:800}
+h3{font-size:18px;font-weight:700}
+p{margin:0 0 14px}
+.wrap{max-width:1500px;margin:0 auto;padding:0 24px}   
+section{padding:30px 0}
+.alt{background:var(--bg-soft)}     
+
+.fill{color:var(--brand);background:var(--brand-soft);padding:1px 2px;border-radius:5px}¶
+
+header.site{background:var(--hero-grad);border-bottom:1px solid var(--line)}
+
+.bar{display:flex;align-items:center;gap:15px;min-height:74px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:15px;color:var(--ink)}
+.brand .name{font-weight:800;font-size:30px;}
+.brand .sub{font-size:13px;color:var(--muted);margin-top:2px}
+
+.hero{
+  position:relative;border:0;padding:84px 0 92px;
+  background-color:#EDE9F7;
+  background-image:url('images/hero_green_sage_plate96.jpg');
+  background-position:center;background-size:cover;background-repeat:no-repeat;
+}
+.hero::after{                                              
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.80) 42%,rgba(255,255,255,.18) 100%);
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-card{
+  max-width:1000px;background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.8);
+  border-radius:20px;padding:40px 38px;box-shadow:0 24px 60px rgba(46,16,101,.10);
+}
+
+.hero h1{margin-bottom:16px}
+.hero .lead{font-size:20px;color:var(--ink);margin-bottom:26px}
+
+.hero .cta{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:30px}
+.facts{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:15px}
+.fact b{display:block;font-size:22px;color:var(--brand);}
+.fact span{font-size:14px;color:var(--muted)}
+
+dl.kv{margin:0;display:grid;grid-template-columns:190px 1fr}   
+dl.kv div{display:contents}
+dl.kv dt{padding:11px 0;border-bottom:1px dashed var(--line);color:var(--muted)}
+dl.kv dd{padding:11px 0;border-bottom:1px dashed var(--line);margin:0}
+
+.support{max-width:500px;border:0px solid var(--line);border-radius:20px;background:#fff;padding:10px 10px;text-align:left}
+.support p{max-width:500px;margin:0 auto;font-size:16px;color:var(--ink)}
+
+footer.site{border-top:0px solid var(--line);background:#fff}
+.foot{flex-wrap:wrap;font-size:14px;padding-bottom: 10px;color:var(--muted);text-align:center; margin-top:10px;background:var(--brand-soft)}
+
+
+@media (max-width:400px){
+  section{padding:20px 0}
+  .hero{padding:10px 0 0px}
+  .hero::after{background:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.86) 100%)}
+  .hero-card{padding:20px 15px 20px 20px;}
+  .facts{gap:15px}
+  .hero .cta{flex-direction:column}
+}
+@media print{.hero::after{background:#fff}section{padding:22px 0}}
+</style>
+
+
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span>
+        <span class="name">МИПАНИ</span>
+        <span class="sub"></span>
+      </span>
+    </a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-card">
+      <h1>Экспресс-тесты для анализа зерновых продуктов</h1>
+      <p class="lead">Тест-системы для одновременного определения низко- и&nbsp;высокомолекулярных соединений на основе нового химически стойкого полимерного материала</p>
+      
+      <div class="facts">
+        <div class="fact"><b>Два&nbsp;аналита</b><span>микотоксины и&nbsp;аллергены</span></div>
+        <div class="fact"><b>40&nbsp;минут</b><span>на 12&nbsp;проб</span></div>
+        <div class="fact"><b>Вариативность измерений</b><span>электрохимическое и&nbsp;колориметрическое</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <h2>О продукте</h2>
+        <p style="margin-top:16px">
+          Тест-система на&nbsp;основе импринтированного полианилина с&nbsp;высокой селективностью к&nbsp;микотоксину охратоксину&nbsp;А и&nbsp;аллергену глютену, позволяющей одновременное определение этих аналитов в&nbsp;пищевых образцах. Тест-система предлагает два варианта анализа: электрохимический с&nbsp;использованием мультиметра (измеряется электрический потенциал) и&nbsp;колориметрический с&nbsp;хромогенной реакцией (измеряется оптическая плотность), что обеспечивает быстрый, чувствительный и&nbsp;экономичный контроль качества без сложного оборудования. 
+          </p>
+
+          <p >
+          Материал отличается высокой стабильностью, возможностью многократного использования и&nbsp;устойчивостью к&nbsp;воздействию факторов окружающей среды, а&nbsp;уникальность продукта заключается в&nbsp;двойной селективности к&nbsp;двум важным маркерам безопасности, портативности и&nbsp;простоте применения, что выгодно отличает его от&nbsp;существующих методов, не&nbsp;позволяющих проводить анализы вне лабораторий.
+        </p>
+        
+      </div>
+
+      <figure>
+        <div class="pic">
+        <img src="images/Scheme01.jpg" alt="Процедура анализа"> 
+        </div>
+        <figcaption>Процедура анализа и образец продукта</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+    <div class="split">
+
+<p class="muted small">
+          Разработка актуальна для лабораторий, специализирующихся на&nbsp;сертификации безглютеновой продукции и&nbsp;на&nbsp;контроле качества зерна, муки, хлебобулочных изделий, а&nbsp;также для производителей безглютеновой продукции.
+        </p>
+</div>
+
+
+
+
+<section id="contacts">
+  <div class="wrap">
+    <h2>Контакты</h2>
+
+    <div class="split" style="align-items:start">
+      <dl class="kv">
+        <div><dt>Организация</dt><dd><span class="fill">ООО «МИПАНИ»</span></dd></div>
+        <div><dt>Телефон</dt><dd><span class="fill"><a href="tel:+79873369389">+7 987 336-93-89</a>    </span></dd></div>
+        <div><dt>E-mail</dt><dd><span class="fill"><a href="mailto:victoriya.gorlo@yandex.ru">victoriya.gorlo@yandex.ru</a></span></dd></div>
+        <div><dt>Руководитель</dt><dd><span class="fill">Горло Виктория Дмитриевна</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+
+      <figure>
+        <div class="pic">
+        <img src="images/logo_fasie.png" alt=""> 
+        </div>
+        <figcaption>Проект реализован при поддержке Фонда содействия инновациям в&nbsp;рамках программы &laquo;Студенческий стартап&raquo; мероприятия &laquo;Платформа университетского технологического предпринимательства&raquo; федерального проекта &laquo;Технологии&raquo;</figcaption>
+      </figure>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
